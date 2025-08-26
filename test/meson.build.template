@@ -1,0 +1,9 @@
+test_sources = [
+    'main.c'
+]
+
+test = executable(
+    'YOUR_TEST',
+    test_sources,
+    include_directories: includes
+)
