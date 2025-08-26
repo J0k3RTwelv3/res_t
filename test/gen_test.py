@@ -24,8 +24,8 @@ def main():
         template = f.read()
         template = template.replace("YOUR_TEST", f"{test_name}_test")
 
-        with open((test_dir / 'meson.build'), 'w') as f:
-            f.write(template)
+        with open((test_dir / 'meson.build'), 'w') as m:
+            m.write(template)
 
     with open((cwd / 'meson.build'), 'a') as f:
         f.write(f"\nsubdir('{test_name}')")
